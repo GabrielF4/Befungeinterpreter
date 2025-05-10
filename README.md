@@ -2,6 +2,7 @@ This is a defunge interpretator made to interpret a certain type of code written
 
 Befunge-93 supports the following instructions:
 
+```
 0-9 Push this number onto the stack.
 + Addition: Pop a and b, then push a+b.
 - Subtraction: Pop a and b, then push b-a.
@@ -28,12 +29,14 @@ p A "put" call (a way to store a value for later use). Pop y, x and v, then chan
 g A "get" call (a way to retrieve data in storage). Pop y and x, then push ASCII value of the character at that position in the program.
 @ End program.
   (i.e. a space) No-op. Does nothing.
+```
 The above list is slightly modified: you'll notice if you look at the Wikipedia page that we do not use the user input instructions and dividing by zero simply yields zero.
 
 Example:
-
+```
 >987v>.v
 v456<  :
 >321 ^ _@
+```
 
 Output: 123456789
